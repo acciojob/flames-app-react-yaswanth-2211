@@ -39,8 +39,8 @@ const App=()=>{
     }
         return(
             <div id="main">
-               <input name="first name" value={name1} onChange={(e)=>setName1(e.target.value)} data-testid="input1"/>
-               <input name="second name" value={name2} onChange={(e)=>setName2(e.target.value)} data-testid="input2"/>
+               <input name="name1" value={name1} onChange={(e)=>setName1(e.target.value)} data-testid="input1"/>
+               <input name="name2" value={name2} onChange={(e)=>setName2(e.target.value)} data-testid="input2"/>
                <button onClick={calculate} data-testid="calculate_relationship">Calculate Relationship Future</button>
                <button onClick={clear} data-testid="clear">Clear</button>
                <h3 data-testid="answer">{relation}</h3>
