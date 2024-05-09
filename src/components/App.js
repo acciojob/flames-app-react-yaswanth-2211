@@ -30,7 +30,7 @@ const App=()=>{
                 common++
             }
         }
-        return(relations[((n+m-(2*common)-1)%6)]);
+        return(relations[((n+m-(2*common)%6)-1)]);
     }
     const clear=()=>{
         setName1("");
